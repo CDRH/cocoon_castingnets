@@ -1,0 +1,8 @@
+*.svn
+figures/*
+audio/*
+config.xsl
+post.py
+data_castingnets/*
+
+.DS_Store
