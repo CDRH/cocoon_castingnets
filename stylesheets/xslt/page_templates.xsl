@@ -368,7 +368,7 @@
     
     <xsl:template name="metadata">
         <div id= "bibliography" class="bibliography">
-            <h2>Metadata:</h2>
+            <h2 class="h4">Metadata:</h2>
             
             <xsl:if test="string(/TEI/teiHeader/fileDesc/sourceDesc/bibl/title[1])">
                 <p>

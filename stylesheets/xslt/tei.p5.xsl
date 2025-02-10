@@ -211,14 +211,29 @@
         </span>
       </xsl:when>
       <xsl:when test=".[@type='sub']">
-        <h3>
+        <h2 class="h3">
           <xsl:apply-templates/>
-        </h3>
+        </h2>
       </xsl:when>
       <xsl:when test="preceding::*[name() = 'head']">
-        <h4>
+        <xsl:choose>
+            <xsl:when test="/TEI[@xml:id='000.about']">
+              <h2 class="h4">
+                <xsl:apply-templates/>
+              </h2>
+            </xsl:when>
+            <xsl:otherwise>
+             <h4>
+               <xsl:apply-templates/>
+             </h4>
+            </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:when>
+      <xsl:when test="@type='main'">
+        <h1 class="h4">
           <xsl:apply-templates/>
-        </h4>
+        </h1>
       </xsl:when>
       <!-- <xsl:otherwise>
         <h2>
