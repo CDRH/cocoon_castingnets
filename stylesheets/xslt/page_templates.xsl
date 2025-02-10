@@ -271,7 +271,7 @@
             
             <form action="result.html" method="get" enctype="application/x-www-form-urlencoded">
                 
-                <h2 class="h3">Search by keyword:</h2>
+                <h1 class="h3">Search by keyword:</h1>
                 
                 <input id="basic-q" type="text" name="q" value="" class="textField"/>
                 
