@@ -56,10 +56,10 @@
                     j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
                     device-width : Occupy full width of the screen in its current orientation
                     initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-                    maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+                    maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width !!REMOVED DUE TO WCAG 2.1 GUIDELINES
                 -->
                 <meta name="viewport"
-                    content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+                    content="width=device-width; initial-scale=1.0;"/>
                 
                 
                 <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
@@ -95,33 +95,36 @@
             
             <body>
                 
-                <div id="header" class="header">
-                    <div class="title"><h1><a href="{$siteroot}">Casting Digital Nets</a></h1>
-                        <h2>Native dispossession, wildlife management, and federalism</h2></div>
-                    <ul class="navigation">
-                        <li><a class="main" href="{$siteroot}">Home</a></li>
-                        <li><a class="map" href="{$siteroot}map/index.html">Map</a></li>
-                        <li><a class="browse" href="{$siteroot}browse/index.html">Browse</a></li>
-                        <li><a class="search" href="{$siteroot}search/index.html">Search</a></li>
-                        <li><a class="about" href="{$siteroot}about/index.html">About</a></li>
-                    </ul>
-                </div><!-- /header -->
+                <header id="header" class="header">
+                    <a class="sr-only sr-only-focusable skip-link" href="#section">Skip to main content</a>
+                    <div class="title"><span class="site-title"><a href="{$siteroot}">Casting Digital Nets</a></span>
+                        <span class="site-subtitle">Native dispossession, wildlife management, and federalism</span></div>
+                    <nav>
+                        <ul class="navigation">
+                            <li><a class="main" href="{$siteroot}">Home</a></li>
+                            <li><a class="map" href="{$siteroot}map/index.html">Map</a></li>
+                            <li><a class="browse" href="{$siteroot}browse/index.html">Browse</a></li>
+                            <li><a class="search" href="{$siteroot}search/index.html">Search</a></li>
+                            <li><a class="about" href="{$siteroot}about/index.html">About</a></li>
+                        </ul>
+                    </nav>
+                </header><!-- /header -->
                 
                 
                 
-                <div id="section" class="section">
+                <main id="section" class="section">
                     <xsl:call-template name="mainContent"/>
-                </div><!-- /main -->
+                </main><!-- /main -->
                 
                 
                 
-                <div id="footer" class="footer">
+                <footer id="footer" class="footer">
                     <p>Published by the <a href="http://cdrh.unl.edu">Center for Digital Research in the
                         Humanities</a>. 
                         <br/>Funded by the <a href="http://www.unl.edu/plains/welcome">Center for Great Plains Studies</a> and the <a href="http://www.unl.edu/plains/pha/pha.shtml">Plains Humanities Alliance</a> at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>.</p>
-                    <img src="{$siteroot}imgs/unl_black.png"
+                    <img src="{$siteroot}imgs/unl_black.png" alt="University of Nebraska-Lincoln"
                         width="150" class="right"/>
-                </div><!-- /footer -->    
+                </footer><!-- /footer -->    
                 
                 
             </body>

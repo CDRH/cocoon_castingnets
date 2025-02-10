@@ -114,7 +114,7 @@
                         <xsl:for-each-group select="/response/result/doc" group-by="str[@name='year']">
                             <xsl:sort select="lower-case(str[@name='year'])"/>
                             <xsl:variable name="groupkey"><xsl:value-of select="translate(current-grouping-key(),' ','')"/></xsl:variable>
-                            <h3><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="current-grouping-key()"/><xsl:text> </xsl:text></h3>
+                            <h2 class="h3"><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="current-grouping-key()"/><xsl:text> </xsl:text></h2>
                             <ul class="searchresults">
                                 <xsl:for-each select="current-group()">
                                     <li>
@@ -166,7 +166,7 @@
                         <xsl:for-each-group select="/response/result/doc" group-by="str[@name='source']">
                             <xsl:sort select="lower-case(str[@name='source'])"/>
                             <xsl:variable name="groupkey"><xsl:value-of select="translate(current-grouping-key(),' ','')"/></xsl:variable>
-                            <h3><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="concat(upper-case(substring(current-grouping-key(), 1, 1)), substring(current-grouping-key(), 2))"/><xsl:text> </xsl:text></h3>
+                            <h2 class="h3"><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="concat(upper-case(substring(current-grouping-key(), 1, 1)), substring(current-grouping-key(), 2))"/><xsl:text> </xsl:text></h2>
                             <ul class="searchresults">
                             <xsl:for-each select="current-group()">
                                 <li>
@@ -219,7 +219,7 @@
                     <xsl:for-each-group select="/response/result/doc" group-by="str[@name='type']">
                         <xsl:sort select="lower-case(str[@name='type'])"/>
                         <xsl:variable name="groupkey"><xsl:value-of select="translate(current-grouping-key(),' ','')"/></xsl:variable>
-                        <h3><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="current-grouping-key()"/><xsl:text> </xsl:text></h3>
+                        <h2 class="h3"><a name="{$groupkey}"><xsl:text> </xsl:text></a><xsl:value-of select="current-grouping-key()"/><xsl:text> </xsl:text></h2>
                         <ul class="searchresults">
                             <xsl:for-each select="current-group()">
                                 <li>
@@ -271,7 +271,7 @@
             
             <form action="result.html" method="get" enctype="application/x-www-form-urlencoded">
                 
-                <h3>Search by keyword:</h3>
+                <h2 class="h3">Search by keyword:</h2>
                 
                 <input id="basic-q" type="text" name="q" value="" class="textField"/>
                 
@@ -368,7 +368,7 @@
     
     <xsl:template name="metadata">
         <div id= "bibliography" class="bibliography">
-            <h4>Metadata:</h4>
+            <h2>Metadata:</h2>
             
             <xsl:if test="string(/TEI/teiHeader/fileDesc/sourceDesc/bibl/title[1])">
                 <p>

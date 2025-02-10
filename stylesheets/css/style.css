@@ -125,12 +125,17 @@ p {
 	position: relative;
 }
 
-.header h1{
-	margin: 0;
-	padding-bottom: 0px;
+.header h1,
+.header .site-title {
+  display: block;
+	font-family: 'SansitaOneRegular';
+  font-size: 5em;
+  padding: .5em 0 0 0;
 }
 
-.header h2 {
+.header h2,
+.header .site-subtitle {
+  display: block;
 	font-size: 2em;
 	margin: 5px;
 	padding: 0 0 10px 0;
@@ -140,7 +145,8 @@ p {
 	font-style: normal;
 }
 
-.header h1 a {
+.header h1 a,
+.header .site-title a {
 	text-decoration: none;
 	color: #a82224;
 	text-shadow: 2px 2px 2px #fff;
@@ -290,5 +296,47 @@ ul.searchresults {
 	border: 2px solid #30373d;
 }
 
+.h3 {
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+.h4 {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
 
 
+/* /////////////////
+Accessibility Fixes
+///////////////// */
+
+/* Skip to main content link */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+a.sr-only-focusable:hover, a.sr-only-focusable:focus {
+  color: #345c87;
+  text-decoration: underline;
+}
+
+a.sr-only.skip-link {
+  background-color: white;
+}
