@@ -95,35 +95,48 @@
             
             <body>
                 
-                <header id="header" class="header">
+                <header>
                     <a class="sr-only sr-only-focusable skip-link" href="#section">Skip to main content</a>
-                    <div class="title"><span class="site-title"><a href="{$siteroot}">Casting Digital Nets</a></span>
-                        <span class="site-subtitle">Native dispossession, wildlife management, and federalism</span></div>
-                    <nav>
-                        <ul class="navigation">
-                            <li><a class="main" href="{$siteroot}">Home</a></li>
-                            <li><a class="map" href="{$siteroot}map/index.html">Map</a></li>
-                            <li><a class="browse" href="{$siteroot}browse/index.html">Browse</a></li>
-                            <li><a class="search" href="{$siteroot}search/index.html">Search</a></li>
-                            <li><a class="about" href="{$siteroot}about/index.html">About</a></li>
-                        </ul>
-                    </nav>
+                    <div class="static-banner-wrapper">
+                      <div class="static-banner">
+                        <p>This version of the website was created in 2025. See the <a href="info.html">Site Information Page</a> for contact information, data downloads, and other details.</p>
+                      </div>
+                    </div>
+                    <div class="header-wrapper">
+                        <div id="header" class="header">
+                            <div class="title"><span class="site-title"><a href="{$siteroot}">Casting Digital Nets</a></span>
+                                <span class="site-subtitle">Native dispossession, wildlife management, and federalism</span></div>
+                            <nav>
+                                <ul class="navigation">
+                                    <li><a class="main" href="{$siteroot}">Home</a></li>
+                                    <li><a class="map" href="{$siteroot}map/index.html">Map</a></li>
+                                    <li><a class="browse" href="{$siteroot}browse/index.html">Browse</a></li>
+                                    <li><a class="search" href="{$siteroot}search/index.html">Search</a></li>
+                                    <li><a class="about" href="{$siteroot}about/index.html">About</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </header><!-- /header -->
                 
                 
                 
-                <main id="section" class="section">
-                    <xsl:call-template name="mainContent"/>
+                <main>
+                    <div id="section" class="section">
+                        <xsl:call-template name="mainContent"/>
+                    </div>
                 </main><!-- /main -->
                 
                 
                 
-                <footer id="footer" class="footer">
+                <footer>
+                    <div id="footer" class="footer">
                     <p>Published by the <a href="http://cdrh.unl.edu">Center for Digital Research in the
                         Humanities</a>. 
                         <br/>Funded by the <a href="http://www.unl.edu/plains/welcome">Center for Great Plains Studies</a> and the <a href="http://www.unl.edu/plains/pha/pha.shtml">Plains Humanities Alliance</a> at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>.</p>
                     <img src="{$siteroot}imgs/unl_black.png" alt="University of Nebraska-Lincoln"
                         width="150" class="right"/>
+                    </div>
                 </footer><!-- /footer -->    
                 
                 

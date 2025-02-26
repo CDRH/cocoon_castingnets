@@ -43,19 +43,20 @@ html {
 	
 }
 
-body {
+.header-wrapper, main, footer {
 	width: 952px;
 	margin: auto;
-	background-color: #fffcee;
 	background: rgba(256,256,256,.7) repeat-x fixed;
-	-moz-box-shadow: 0px 0px 10px #000;
+	/* -moz-box-shadow: 0px 0px 10px #000;
 	-webkit-box-shadow: 0px 0px 10px #000;
-	box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000; */
 	font-size: 16px;
 	border-right: 1px solid #2f373c;
 	border-left: 1px solid #2f373c;
+}
+
+footer {
 	border-bottom: 1px solid #2f373c;
-	
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,7 +108,7 @@ p {
 	padding: 20px;
 	background-color: #4b5b58;
 	opacity: 1;
-	margin: -50px 0 0 0;
+	margin: auto;
 }
 
 .about .about, .main .main, .browse .browse, .search .search, .map .map {
@@ -339,4 +340,38 @@ a.sr-only-focusable:hover, a.sr-only-focusable:focus {
 
 a.sr-only.skip-link {
   background-color: white;
+}
+.static-banner-wrapper {
+  background-color: #cce5f2;
+  border-bottom: 1px solid #226e95;
+  position: relative;
+  z-index: 1;
+}
+
+.static-banner {
+  margin: auto;
+  max-width: 920px; /* Change this to the width of the page content */
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.static-banner p {
+  font-size: 14px; /* Change to fit site */
+  margin: 0;
+}
+
+.static-banner p a,
+.static-banner p a:visited {
+  color: #0000EE;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.static-banner p a:hover {
+  background: none;
+  color: #010194;
+  margin: 0;
+  padding: 0;
 }
