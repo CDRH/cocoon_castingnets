@@ -133,7 +133,7 @@
                     <div id="footer" class="footer">
                     <p>Published by the <a href="http://cdrh.unl.edu">Center for Digital Research in the
                         Humanities</a>. 
-                        <br/>Funded by the <a href="http://www.unl.edu/plains/welcome">Center for Great Plains Studies</a> and the <a href="http://www.unl.edu/plains/pha/pha.shtml">Plains Humanities Alliance</a> at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>.</p>
+                        <br/>Funded by the Center for Great Plains Studies and the Plains Humanities Alliance at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>.</p>
                     <img src="{$siteroot}imgs/unl_black.png" alt="University of Nebraska-Lincoln"
                         width="150" class="right"/>
                     </div>
